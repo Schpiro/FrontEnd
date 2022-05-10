@@ -1,6 +1,7 @@
 <div *ngIf="hardware">
     <h3>Hardware details {{hardware.name}}</h3>
     <div>This hardware costs: {{hardware.price}}</div>
+    <br>
     <button (click)="delete(hardware)" class="deleteButtons">DELETE</button>
     <button routerLink="/hardwares">Go back</button>
 </div>

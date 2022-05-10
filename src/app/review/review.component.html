@@ -1,4 +1,6 @@
 <ul class="reviews">
+    <div *ngIf="!reviews?.length">Hardware does not have any reviews yet.</div>
+    <div *ngIf="reviews?.length"><b>Hardware reviews</b></div>
     <li *ngFor="let review of reviews">
         <div>{{review.grade}} {{review.title}} - {{review.text}}</div>
     </li>
