@@ -1,0 +1,20 @@
+ul{
+    list-style: none;
+}
+li{
+    display: block;
+    outline: 1px solid gray;
+    background-color: gray;
+    width: 10%;
+    padding: 2%;
+    margin-top: 2%;
+    color: #EDEDED;
+}
+li:hover
+{
+    color: #EDEDED;
+    background-color: lightgray;
+}
+li:active{
+    background-color: black;
+}

@@ -1,0 +1,40 @@
+<div>
+    <h3>Input new hardware</h3>
+    <div>
+        <label>Code:
+            <div>
+                <input #code />
+            </div>
+        </label>
+    </div>
+    <div>
+        <label>Name:
+            <div>
+                <input #name />
+            </div>
+        </label>
+    </div>
+    <div>
+        <select name="types" id="types" #typesSelect>
+            <option *ngFor="let type of types" [value]="type">{{type}}</option>
+        </select>
+    </div>
+    <div>
+        <label>Stock:
+            <div>
+                <input #stock />
+            </div>
+        </label>
+    </div>
+    <div>
+        <label>Price:
+            <div>
+                <input #price />
+            </div>
+        </label>
+    </div>
+    <button (click)="add(code.value, name.value, typesSelect.value, stock.value, price.value);
+     code.value=''; name.value=''; typesSelect.value=''; stock.value=''; price.value='';">
+        Enter new hardware
+    </button> 
+</div>
